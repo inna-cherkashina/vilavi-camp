@@ -1,0 +1,40 @@
+@import url('./01-video-section.css');
+@import url('./../fonts/DINPro.css');
+
+:root {
+  --main-color: #60C3D8;
+  --other-color: #EF786F;
+  --border-color: #E3E3E3;
+  --bg-color-1: #F5F5F5;
+  --bg-color-2: #C6C6C6;
+
+  --form-pay-color: #878787;
+  --fw-family: "DINPro", Arial, Helvetica, sans-serif;
+  --fw-light: 200;
+  --fw-regular: 400;
+  --fw-medium: 600;
+  --fw-bold: 700;
+  --fw-black: 800;
+  --fsz-mini: 12px;
+  --fsz-little: 14px;
+  --fsz-little-plus: 16px;
+  --fsz-medium: 24px;
+  --fsz-medium-plus: 34px;
+  --fsz-medium-big: 40px;
+
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 1366px;
+  height: auto;
+  margin: 0px auto;
+}
