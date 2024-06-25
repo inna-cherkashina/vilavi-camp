@@ -1,1 +1,1 @@
-# [vilavi-camp](https://github.com/inna-cherkashina/vilavi-camp.git)
+# [vilavi-camp](https://inna-cherkashina.github.io/vilavi-camp/)
