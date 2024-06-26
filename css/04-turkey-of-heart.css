@@ -1,0 +1,66 @@
+.turkey-of-heart {
+  width: 100%;
+  background-size: cover;
+}
+
+.turkey-title__container {
+  background: var(--other-color);
+  padding: 62px 0px 70px 0px;
+}
+
+.turkey-of-heart__img-container {
+  margin: 0px 0px 140px 0px;
+  background: url('./../images/img-3.jpg');
+  display: flex;
+  height: 1500px;
+  align-items: center;
+}
+
+.turkey-title__container .title__container {
+  color: #ffffff;
+  text-align: center;
+}
+
+.turkey-of-heart__description-flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.turkey-of-heart__text {
+  background: rgb(109, 126, 123, 0.5);
+  backdrop-filter: blur(10px);
+  width: 400px;
+  max-height: 664px;
+  padding: 30px;
+  gap: 30px;
+  font-size: var(--fsz-little);
+  display: flex;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  flex-direction: column;
+  font-weight: var(--fw-medium);
+  font-family: var(--fw-family);
+}
+
+.turkey-of-heart__text p {
+  color: #ffffff;
+}
+
+.first-elem {
+  height: 412px;
+  margin: 300px 0px 0px 0px;
+}
+
+.second-elem {
+  height: 300px;
+}
+
+.linear-gradient__line {
+  margin: 140px auto 120px auto;
+  width: 1265px;
+  height: 2px;
+  background: linear-gradient(to right, rgb(96, 195, 216), rgb(96, 195, 216, 0.23), rgb(9, 98, 133, 0.43), rgb(239, 120, 111, 0.67), rgb(232, 65, 59));
+}

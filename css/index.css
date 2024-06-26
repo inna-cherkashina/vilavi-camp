@@ -1,7 +1,9 @@
-@import url('./03-why-are-we.css');
-@import url('./02-whant-to-go.css');
-@import url('./01-video-section.css');
 @import url('./../fonts/DINPro.css');
+@import url('./01-video-section.css');
+@import url('./02-whant-to-go.css');
+@import url('./03-why-are-we.css');
+@import url('./04-turkey-of-heart.css');
+@import url('./05-what-wait.css');
 
 :root {
   --main-color: #60C3D8;
@@ -38,11 +40,11 @@ a {
 section {
   width: 100%;
   height: auto;
-  margin: 0px auto;
+
 }
 
 .center {
-  max-width: 1266px;
+  width: 1266px;
   margin: 0px auto;
 }
 
