@@ -1,3 +1,5 @@
+@import url('./03-why-are-we.css');
+@import url('./02-whant-to-go.css');
 @import url('./01-video-section.css');
 @import url('./../fonts/DINPro.css');
 
@@ -8,33 +10,67 @@
   --bg-color-1: #F5F5F5;
   --bg-color-2: #C6C6C6;
 
-  --form-pay-color: #878787;
   --fw-family: "DINPro", Arial, Helvetica, sans-serif;
   --fw-light: 200;
   --fw-regular: 400;
   --fw-medium: 600;
   --fw-bold: 700;
   --fw-black: 800;
-  --fsz-mini: 12px;
-  --fsz-little: 14px;
-  --fsz-little-plus: 16px;
+  --fsz-little: 18px;
   --fsz-medium: 24px;
-  --fsz-medium-plus: 34px;
-  --fsz-medium-big: 40px;
 
 }
 
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
 }
 
+.wrapper {
+  position: relative;
+}
+
 section {
-  width: 1366px;
+  width: 100%;
   height: auto;
   margin: 0px auto;
+}
+
+.center {
+  max-width: 1266px;
+  margin: 0px auto;
+}
+
+h1,
+h2 {
+  font-size: 63px;
+  font-family: var(--fw-family);
+}
+
+.title__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.title-text__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-family: var(--fw-family);
+  font-weight: var(--fw-medium);
+  margin: 0px 0px 55px 0px;
+}
+
+.title-text {
+  font-size: var(--fsz-little);
+  font-family: var(--fw-family);
+  font-weight: var(--fw-medium);
 }

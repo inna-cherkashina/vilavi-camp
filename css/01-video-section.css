@@ -1,6 +1,10 @@
 .video-section {
-  background: url('./../images/bg-spots.svg');
-  background-size: cover;
+  width: 100%;
+  height: 839px;
+  overflow-y: hidden;
+  position: relative;
+  /* background: url('./../images/bg-spots.svg'); */
+  /* background-size: cover; */
 }
 
 .flex-wrapper {
@@ -8,6 +12,8 @@
   flex-direction: column;
   align-items: center;
   padding: 30px 0px 83px 0px;
+  position: relative;
+  z-index: 100;
 }
 
 .logo-container {
@@ -41,27 +47,6 @@
 
 .under--line {
   align-self: flex-end;
-}
-
-h1 {
-  font-family: var(--fw-family);
-  font-size: 63px;
-  margin: 0px 0px 50px 0px;
-}
-
-.data-place__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  font-family: var(--fw-family);
-  font-weight: var(--fw-medium);
-  margin: 0px 0px 55px 0px;
-}
-
-.data-place__text {
-  font-family: var(--fw-family);
-  font-weight: var(--fw-medium);
 }
 
 .video__container {
@@ -109,4 +94,11 @@ h1 {
   width: 56px;
   height: 34px;
   background-size: cover;
+}
+
+.svg-wrapper {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 768px;
 }

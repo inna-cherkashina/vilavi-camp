@@ -1,0 +1,24 @@
+.whant-to-go-section {
+  padding: 120px 0px 120px 0px;
+  position: relative;
+}
+
+.whant-to-go__text {}
+
+.whant-to-go__description-container {
+  display: flex;
+  gap: 30px;
+  font-family: var(--fw-family);
+  font-size: var(--fsz-little);
+}
+
+.whant-to-go__description {
+  width: 618px;
+  padding: 30px;
+  background: var(--bg-color-1);
+  border-radius: 45px;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -o-border-radius: 45px;
+}
