@@ -1,35 +1,25 @@
-.turkey-of-heart {
-  width: 100%;
-  background-size: cover;
+.meet-place__section {
+  margin: 120px 0px 0px 0px;
 }
 
-.turkey-title__container {
-  background: var(--other-color);
-  padding: 62px 0px 70px 0px;
-}
-
-.turkey-of-heart__img-container {
+.meet-place__img-container {
   margin: 0px 0px 140px 0px;
-  background: url('./../images/img-3.jpg');
+  background: url('./../images/img-5.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   height: 1500px;
   align-items: center;
   position: relative;
+
 }
 
-.turkey-title__container .title__container {
-  color: #ffffff;
-  text-align: center;
-}
-
-.turkey-of-heart__description-flexbox {
+.meet-place__description-flexbox {
   display: flex;
   justify-content: space-between;
 }
 
-.turkey-of-heart__text {
+.meet-place__text {
   background: rgb(109, 126, 123, 0.5);
   backdrop-filter: blur(10px);
   width: 400px;
@@ -48,35 +38,20 @@
   font-family: var(--fw-family);
 }
 
-.turkey-of-heart__text p {
+.meet-place__text p {
   color: #ffffff;
 }
 
-.first-elem {
-  height: 412px;
+.meet-place__text.first-elem {
+  height: 435px;
   margin: 300px 0px 0px 0px;
 }
 
-.second-elem {
-  height: 300px;
+.meet-place__text.second-elem {
+  height: 480px;
 }
 
-.linear-gradient__line {
-  margin: 140px auto 120px auto;
-  width: 1265px;
-  height: 2px;
-  background: linear-gradient(to right, rgb(96, 195, 216), rgb(96, 195, 216, 0.23), rgb(9, 98, 133, 0.43), rgb(239, 120, 111, 0.67), rgb(232, 65, 59));
-}
-
-.line-scroll {
-  position: absolute;
-  width: 5px;
-  height: 690px;
-  background: linear-gradient(to top, rgb(96, 195, 216), rgb(96, 195, 216), rgb(9, 98, 133), rgb(239, 120, 111), rgb(232, 65, 59));
-  left: calc(100% / 2);
-}
-
-.circle-scroll {
+.meet-place__circle-scroll {
   width: 50px;
   height: 50px;
   background: url('./../images/circle-scroll.svg');
@@ -91,7 +66,7 @@
   -o-transition: 0.3s ease all;
 }
 
-.circle-scroll--color-one {
+.meet-place__circle-scroll--color-one {
   fill: rgb(239, 120, 111);
   transition: 0.3s ease all;
   -webkit-transition: 0.3s ease all;
@@ -100,7 +75,7 @@
   -o-transition: 0.3s ease all;
 }
 
-.circle-scroll--color-two {
+.meet-place__circle-scroll--color-two {
   fill: #936F78;
   transition: 0.3s ease all;
   -webkit-transition: 0.3s ease all;
@@ -109,7 +84,8 @@
   -o-transition: 0.3s ease all;
 }
 
-.circle-scroll--color-three {
+
+.meet-place__circle-scroll--color-three {
   fill: rgb(9, 98, 133);
   transition: 0.3s ease all;
   -webkit-transition: 0.3s ease all;
@@ -118,7 +94,7 @@
   -o-transition: 0.3s ease all;
 }
 
-.circle-scroll--color-four {
+.meet-place__circle-scroll--color-four {
   fill: rgb(96, 195, 216);
   transition: 0.3s ease all;
   -webkit-transition: 0.3s ease all;
