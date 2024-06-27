@@ -7,6 +7,8 @@
 @import url('./06-meet-place.css');
 @import url('./07-programm-section.css');
 @import url('./08-our-spiker.css');
+@import url('./09-guide.css');
+@import url('./10-footer.css');
 
 :root {
   --main-color: #60C3D8;
@@ -79,4 +81,23 @@ h2 {
   font-size: var(--fsz-little);
   font-family: var(--fw-family);
   font-weight: var(--fw-medium);
+}
+
+.button {
+  margin: 50px auto 120px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--main-color);
+  color: #ffffff;
+  font-family: var(--fw-family);
+  font-size: 20px;
+  font-weight: var(--fw-black);
+  width: 230px;
+  height: 57px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }
