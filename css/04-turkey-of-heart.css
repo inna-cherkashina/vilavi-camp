@@ -11,9 +11,12 @@
 .turkey-of-heart__img-container {
   margin: 0px 0px 140px 0px;
   background: url('./../images/img-3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   height: 1500px;
   align-items: center;
+  position: relative;
 }
 
 .turkey-title__container .title__container {
@@ -63,4 +66,64 @@
   width: 1265px;
   height: 2px;
   background: linear-gradient(to right, rgb(96, 195, 216), rgb(96, 195, 216, 0.23), rgb(9, 98, 133, 0.43), rgb(239, 120, 111, 0.67), rgb(232, 65, 59));
+}
+
+.line-scroll {
+  position: absolute;
+  width: 5px;
+  height: 690px;
+  background: linear-gradient(to top, rgb(96, 195, 216), rgb(96, 195, 216), rgb(9, 98, 133), rgb(239, 120, 111), rgb(232, 65, 59));
+  left: calc(100% / 2);
+}
+
+.circle-scroll {
+  width: 50px;
+  height: 50px;
+  background: url('./../images/circle-scroll.svg');
+  position: sticky;
+  top: 0px;
+  transform: translateX(-22px);
+  fill: rgb(232, 65, 59);
+  transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+}
+
+.circle-scroll--color-one {
+  fill: rgb(239, 120, 111);
+  transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+}
+
+.circle-scroll--color-two {
+  fill: #936F78;
+  transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+}
+
+
+.circle-scroll--color-three {
+  fill: rgb(9, 98, 133);
+  transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+}
+
+.circle-scroll--color-four {
+  fill: rgb(96, 195, 216);
+  transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
 }
