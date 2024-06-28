@@ -223,6 +223,7 @@
 }
 
 .line-scroll--mobile {
+  display: block;
   position: absolute;
   width: 2px;
   height: 1177px;
@@ -232,6 +233,7 @@
 }
 
 .circle-scroll--mobile {
+  display: block;
   width: 25px;
   height: 25px;
   position: sticky;
