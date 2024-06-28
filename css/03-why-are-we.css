@@ -21,7 +21,7 @@
 .why-are-we__description-container {
   position: sticky;
   top: 90px;
-  left: 320px;
+  left: calc(50% - 625px);
   bottom: 90px;
   z-index: 200;
   width: 620px;

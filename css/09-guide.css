@@ -77,7 +77,19 @@
   font-family: var(--fw-family);
   font-size: var(--fsz-little);
   font-weight: var(--fw-medium);
-  ;
+
+}
+
+.accordion-body span {
+  color: var(--other-color);
+}
+
+.accordion-body p {
+  margin: 0px 0px 10px 0px;
+}
+
+.accordion-body a {
+  color: var(--main-color);
 }
 
 .accordion-header::after {
@@ -125,6 +137,14 @@
   font-size: var(--fsz-little);
   font-weight: var(--fw-regular);
   margin: 0px 0px 25px 0px;
+}
+
+.guide-contacts__text a {
+  text-decoration: none;
+  color: black;
+  font-family: var(--fw-family);
+  font-size: var(--fsz-little);
+  font-weight: var(--fw-bold);
 }
 
 .guide-contacts__text:last-child {
