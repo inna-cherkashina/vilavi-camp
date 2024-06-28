@@ -115,7 +115,8 @@
 }
 
 .carat-cristall__progressbar-little {
-  background: url('./../images/little-carat.png');
+  position: relative;
+  /* background: url('./../images/little-carat.png'); */
   width: 108px;
   height: 108px;
   background-size: cover;
@@ -123,6 +124,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+}
+
+.progressbar-little__img {
+  position: absolute;
+  display: block;
   animation: circle-little 3s ease infinite both;
   -webkit-animation: circle-little 3s ease infinite both;
 }
@@ -134,12 +141,13 @@
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
-}
-  to{
+  }
+
+  to {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
-}
+  }
 }
