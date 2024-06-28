@@ -8,6 +8,14 @@
   display: none;
 }
 
+.line-scroll--mobile {
+  display: none;
+}
+
+.circle-scroll--mobile {
+  display: none;
+}
+
 .turkey-title__container {
   background: var(--other-color);
   padding: 62px 0px 70px 0px;
