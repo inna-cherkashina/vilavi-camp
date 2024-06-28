@@ -22,3 +22,39 @@
   -ms-border-radius: 45px;
   -o-border-radius: 45px;
 }
+
+@media (max-width: 692px) {
+  .whant-to-go__description-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .whant-to-go__description {
+    width: 100%;
+  }
+
+  .whant-to-go__description {
+    font-size: var(--fsz-little-plus);
+  }
+}
+
+@media (max-width: 500px) {
+  .whant-to-go-section {
+    padding: 65px 0px 65px 0px;
+    position: relative;
+  }
+
+  .whant-to-go__description-container {
+    gap: 20px;
+    margin: 45px 0px 0px 0px;
+  }
+
+  .whant-to-go__description {
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+  }
+
+}

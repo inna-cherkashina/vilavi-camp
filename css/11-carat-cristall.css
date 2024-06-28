@@ -151,3 +151,66 @@
     -o-transform: rotate(360deg);
   }
 }
+
+@media (max-width: 1200px) {
+  .carat-cristall__progressbar-little {
+    width: 95px;
+    height: 95px;
+  }
+
+  .progressbar-little__img {
+    width: 95px;
+    position: absolute;
+    display: block;
+    animation: circle-little 3s ease infinite both;
+    -webkit-animation: circle-little 3s ease infinite both;
+  }
+}
+
+@media (max-width: 950px) {
+  .carat-cristall__flexbox {
+    margin: 50px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 60px;
+    flex-direction: column;
+  }
+
+  .carat-cristall__item {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 692px) {
+
+  .carat-one,
+  .carat-two,
+  .carat-three,
+  .carat-four {
+    width: 150px;
+    height: 150px;
+  }
+
+  .carat-cristall__count,
+  .carat-cristall__gpv {
+    font-size: var(--fsz-medium);
+
+  }
+
+  .carat-cristall__progressbar-little {
+    width: 71px;
+    height: 71px;
+  }
+
+  .progressbar-little__img {
+    width: 71px;
+  }
+
+  .carat-cristall__count-little {
+    font-size: 12px;
+
+  }
+}
