@@ -57,24 +57,6 @@
   position: sticky;
   top: calc(100%/2);
   transform: translateX(-22px);
-  fill: rgb(232, 65, 59);
-  transition: 0.3s ease all;
-  -webkit-transition: 0.3s ease all;
-  -moz-transition: 0.3s ease all;
-  -ms-transition: 0.3s ease all;
-  -o-transition: 0.3s ease all;
-}
-
-.meet-place__circle-scroll--color-one {
-  fill: rgb(239, 120, 111);
-  transition: 0.3s ease all;
-  -webkit-transition: 0.3s ease all;
-  -moz-transition: 0.3s ease all;
-  -ms-transition: 0.3s ease all;
-  -o-transition: 0.3s ease all;
-}
-
-.meet-place__circle-scroll--color-two {
   fill: #ed6961;
   transition: 0.3s ease all;
   -webkit-transition: 0.3s ease all;
@@ -83,34 +65,7 @@
   -o-transition: 0.3s ease all;
 }
 
-.meet-place__circle-scroll--color-three {
-  fill: #d57672;
-  transition: 0.3s ease all;
-  -webkit-transition: 0.3s ease all;
-  -moz-transition: 0.3s ease all;
-  -ms-transition: 0.3s ease all;
-  -o-transition: 0.3s ease all;
-}
-
-.meet-place__circle-scroll--color-four {
-  fill: #a77276;
-  transition: 0.3s ease all;
-  -webkit-transition: 0.3s ease all;
-  -moz-transition: 0.3s ease all;
-  -ms-transition: 0.3s ease all;
-  -o-transition: 0.3s ease all;
-}
-
-.meet-place__circle-scroll--color-five {
-  fill: #626b7d;
-  transition: 0.3s ease all;
-  -webkit-transition: 0.3s ease all;
-  -moz-transition: 0.3s ease all;
-  -ms-transition: 0.3s ease all;
-  -o-transition: 0.3s ease all;
-}
-
-.meet-place__circle-scroll--color-six {
+.meet-place__circle-scroll--color-one {
   fill: #256582;
   transition: 0.3s ease all;
   -webkit-transition: 0.3s ease all;
@@ -119,16 +74,7 @@
   -o-transition: 0.3s ease all;
 }
 
-.meet-place__circle-scroll--color-seven {
-  fill: #3998b3;
-  transition: 0.3s ease all;
-  -webkit-transition: 0.3s ease all;
-  -moz-transition: 0.3s ease all;
-  -ms-transition: 0.3s ease all;
-  -o-transition: 0.3s ease all;
-}
-
-.meet-place__circle-scroll--color-eight {
+.meet-place__circle-scroll--color-two {
   fill: #60c3d8;
   transition: 0.3s ease all;
   -webkit-transition: 0.3s ease all;

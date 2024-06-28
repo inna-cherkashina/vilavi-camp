@@ -1,0 +1,126 @@
+.carat-cristall__section {
+  padding: 120px 0px 0px 0px;
+}
+
+.carat-cristall__flexbox {
+  margin: 50px 0px 0px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  row-gap: 60px;
+}
+
+.carat-cristall__item {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carat-cristall__big {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carat-cristall__title {
+  font-size: var(--fsz-little-plus);
+  font-family: var(--fw-family);
+  color: var(--other-color);
+  font-weight: var(--fw-bold);
+  margin: 0px 0px 10px 0px;
+
+}
+
+.carat-cristall__progressbar-big {
+  font-size: var(--fsz-medium-plus);
+  font-family: var(--fw-family);
+  color: var(--other-color);
+  font-weight: var(--fw-bold);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.carat-one {
+  background: url('./../images/2000.png');
+  width: 186px;
+  height: 186px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carat-two {
+  background: url('./../images/6000.png');
+  width: 186px;
+  height: 186px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carat-three {
+  background: url('./../images/12000.png');
+  width: 186px;
+  height: 186px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carat-four {
+  background: url('./../images/20000.png');
+  width: 186px;
+  height: 186px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carat-cristall__count,
+.carat-cristall__gpv {
+  font-size: var(--fsz-medium-plus);
+  font-family: var(--fw-family);
+  color: var(--other-color);
+  font-weight: var(--fw-bold);
+}
+
+
+.carat-cristall__little {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin: 25px 0px 0px 0px;
+}
+
+.carat-cristall__count-little {
+  font-size: var(--fsz-little-plus);
+  font-family: var(--fw-family);
+  color: var(--other-color);
+  font-weight: var(--fw-bold);
+}
+
+.carat-cristall__progressbar-little {
+  background: url('./../images/little-carat.png');
+  width: 108px;
+  height: 108px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

@@ -42,7 +42,8 @@
 }
 
 .slider-container .slick-prev {
-  background: url('./../images/slider/arr-l.svg');
+  cursor: url('./../images/slider/arr-r.svg') 2 2, move;
+  background: none;
   left: calc(50% - 100px);
 }
 
@@ -55,18 +56,18 @@
 }
 
 .slider-container .slick-arrow {
-  cursor: pointer;
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 56%;
+  height: 100%;
   font-size: 0px;
   z-index: 110;
   border: none;
-  top: 30px;
+  top: 0px;
 }
 
 .slider-container .slick-next {
-  background: url('./../images/slider/arr-r.svg');
+  cursor: url('./../images/slider/arr-l.svg') 2 2, move;
+  background: none;
   right: calc(50% - 100px);
 }
 
@@ -77,4 +78,3 @@
 .slick-next--disactive {
   visibility: hidden;
 }
-

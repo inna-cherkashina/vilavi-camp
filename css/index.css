@@ -9,6 +9,7 @@
 @import url('./08-our-spiker.css');
 @import url('./09-guide.css');
 @import url('./10-footer.css');
+@import url('./11-carat-cristall.css');
 
 :root {
   --main-color: #60C3D8;
@@ -23,8 +24,10 @@
   --fw-medium: 600;
   --fw-bold: 700;
   --fw-black: 800;
+  --fsz-little-plus: 16px;
   --fsz-little: 18px;
   --fsz-medium: 24px;
+  --fsz-medium-plus: 34px;
 
 }
 
