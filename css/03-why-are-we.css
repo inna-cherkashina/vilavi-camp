@@ -70,4 +70,6 @@
   color: #ffffff;
 }
 
-.why-are-we__text {}
+.why-are-we__text {
+  text-align: left;
+}

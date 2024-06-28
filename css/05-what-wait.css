@@ -35,15 +35,19 @@
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   position: relative;
-}
-
-.switch--disactive {
   background: var(--other-color);
+  transition: all 0.3s ease 3s;
+  -webkit-transition: all 0.3s ease 1s;
+  -moz-transition: all 0.3s ease 3s;
+  -ms-transition: all 0.3s ease 3s;
+  -o-transition: all 0.3s ease 3s;
 }
 
-.switch--active {
+.switch.active {
   background: var(--main-color);
 }
+
+
 
 .handle-switch {
   position: absolute;
@@ -57,16 +61,15 @@
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
-  transition: 0.3s ease all;
-  -webkit-transition: 0.3s ease all;
-  -moz-transition: 0.3s ease all;
-  -ms-transition: 0.3s ease all;
-  -o-transition: 0.3s ease all;
+  transition: all 0.3s ease 1s;
+  -webkit-transition: all 0.3s ease 1s;
+  -moz-transition: all 0.3s ease 1s;
+  -ms-transition: all 0.3s ease 1s;
+  -o-transition: all 0.3s ease 1s;
 }
 
-.handle--active {
+.handle-switch.active {
   left: 42px;
-
 }
 
 .switch-text {
