@@ -150,3 +150,67 @@
 .guide-contacts__text:last-child {
   margin: 0px;
 }
+
+@media (max-width: 1300px) {
+  .guide-info__flexbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .accordion {
+    width: auto;
+  }
+
+  .guide-contacts__section {
+    width: 689px;
+  }
+}
+
+@media (max-width: 745px) {
+
+  .guide-contacts__section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 690px) {
+
+  .guide__section .title-text__container,
+  .faq__section .title-text__container {
+    margin: 0px 0px 45px 0px;
+  }
+
+  .accordion,
+  .faq__accordion {
+    padding: 30px;
+  }
+
+  .guide__section .center,
+  .faq__section .center {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .accordion-header {
+    font-size: 20px;
+  }
+
+  .accordion-header::after {
+    content: url('./../images/arr-mini-accordeon.svg');
+    top: -4px;
+    right: -20px;
+
+  }
+
+  .accordion-body {
+    font-size: var(--fsz-little-plus);
+  }
+
+  .guide-contacts__text a,
+  .guide-contacts__text {
+    font-size: var(--fsz-little-plus);
+  }
+
+}

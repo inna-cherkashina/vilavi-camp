@@ -27,3 +27,24 @@ footer {
   color: #ffff;
   text-decoration: underline;
 }
+
+@media (max-width: 690px) {
+  footer {
+    width: 100%;
+    padding: 30px 0px 55px 0px;
+  }
+
+  .footer-logo__container {
+    width: 120px;
+    height: 100px;
+  }
+
+  .footer-logo__container img {
+    width: 120px;
+  }
+
+  .footer__flexbox {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
