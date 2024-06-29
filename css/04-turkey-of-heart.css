@@ -269,8 +269,6 @@
 
 }
 
-
-
 @media (max-width: 500px) {
   .turkey-of-heart__text img {
     display: block;
@@ -288,7 +286,4 @@
     gap: 50px;
   }
 
-  .line-scroll--mobile {
-    top: -15px;
-  }
 }
