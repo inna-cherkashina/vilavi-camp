@@ -78,3 +78,9 @@
 .slick-next--disactive {
   visibility: hidden;
 }
+
+@media (max-width: 500px) {
+  .our-spiker__section .title-text__container {
+    margin: 0px 0px 45px 0px;
+  }
+}

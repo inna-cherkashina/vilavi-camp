@@ -111,6 +111,10 @@
     margin: 0px;
 
   }
+
+  .meet-place__text.second-elem {
+    height: auto;
+  }
 }
 
 @media (max-width: 692px) {
@@ -134,7 +138,7 @@
     width: 100%;
     max-height: none;
     padding: 0px;
-    gap: 30px;
+    gap: 36px;
     font-size: var(--fsz-little-plus);
     display: flex;
     border-radius: none;
@@ -196,6 +200,8 @@
     -ms-transform: translateX(-11px);
     -o-transform: translateX(-11px);
   }
+
+
 }
 
 @media (max-width: 500px) {
@@ -207,7 +213,7 @@
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
     object-fit: cover;
-    height: 307px;
+    height: 390px;
   }
 
   .meet-place__text__description-flexbox {
@@ -219,4 +225,10 @@
     margin: 25px 0px 0px 0px;
   }
 
+}
+
+@media (max-width: 400px) {
+  .meet-place__text img {
+    height: 350px;
+  }
 }

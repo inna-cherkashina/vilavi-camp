@@ -1,15 +1,47 @@
 //! Слайдер Start
-$(document).ready(function () {
-  $('.slider-container').slick({
-    arrows: true,
-    adaptiveHeight: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    // infinite: true,
-    // autoplay: true,
-    // autoplaySpeed: 1000
+
+  $(document).ready(function () {
+    $('.slider-container').slick({
+      arrows: true,
+      adaptiveHeight: true,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      swipe: true,
+      touchThreshold: 10,
+      centerMode: true,
+      focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 3,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 2,
+            arrows: false,
+          }
+        },
+
+        {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 1,
+            arrows: false,
+          }
+        },
+      ]
+    });
   });
-});
 
 //! Слайдер End
 
