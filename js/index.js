@@ -66,8 +66,7 @@ buttonVideo.addEventListener('click', function () {
 let colorElement = document.querySelector('.circle-scroll svg');
 
 // let colorElementMobile = document.querySelector('.circle-scroll--mobile svg');
-window.addEventListener('scroll', () => {
-  
+window.addEventListener('scroll', () => {  
   if (window.pageYOffset < 4660) {
     colorElement.classList.remove('circle-scroll--color-one');
   }
@@ -80,7 +79,8 @@ window.addEventListener('scroll', () => {
     colorElement.classList.add('circle-scroll--color-two');
   }  
 
- if (window.matchMedia("(max-width: 1000px)")) {
+  if (window.matchMedia("(max-width: 500px)")) {
+    console.log(window.pageYOffset);
     if (window.pageYOffset < 4840) {
       colorElement.classList.remove('circle-scroll--color-one');
     }
