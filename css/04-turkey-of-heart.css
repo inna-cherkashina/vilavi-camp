@@ -153,6 +153,16 @@
 }
 
 @media (max-width: 692px) {
+  .turkey-of-heart__img-container--mobile .center {
+    padding: 0px 30px 0px 0px;
+  }
+
+  .turkey-of-heart__flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 120px 0px 0px 0px;
+  }
+
   .turkey-of-heart {
     display: none;
   }
@@ -166,7 +176,7 @@
   }
 
   .turkey-of-heart__description-flexbox {
-    margin: 128px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     gap: 50px;
   }
 
@@ -222,12 +232,12 @@
 
   .line-scroll--mobile {
     display: block;
-    position: absolute;
+    position: relative;
     width: 2px;
-    height: 1177px;
+    height: 100%;
     background: linear-gradient(to top, rgb(96, 195, 216), rgb(96, 195, 216), rgb(9, 98, 133), rgb(239, 120, 111), rgb(232, 65, 59));
-    left: 15px;
-    top: -40px;
+    left: 27px;
+    top: 0px;
   }
 
   .circle-scroll--mobile {
@@ -281,8 +291,12 @@
     height: 307px;
   }
 
+  .turkey-of-heart__flex-container {
+    margin: 55px 0px 0px 0px;
+  }
+
   .turkey-of-heart__description-flexbox {
-    margin: 92px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     gap: 50px;
   }
 

@@ -64,8 +64,10 @@ buttonVideo.addEventListener('click', function () {
 
 //^ Анимация смены цвета ползунка при вертикальном скролле Start
 let colorElement = document.querySelector('.circle-scroll svg');
+let colorElementMobile = document.querySelector('.circle-scroll--mobile svg');
+let meetColorElement = document.querySelector('.meet-place__circle-scroll svg');
+let meetColorElementMobile = document.querySelector('.meet-place__line-scroll--mobile svg');
 
-// let colorElementMobile = document.querySelector('.circle-scroll--mobile svg');
 window.addEventListener('scroll', () => {  
   if (window.pageYOffset < 4660) {
     colorElement.classList.remove('circle-scroll--color-one');
@@ -80,25 +82,20 @@ window.addEventListener('scroll', () => {
   }  
 
   if (window.matchMedia("(max-width: 500px)")) {
-    console.log(window.pageYOffset);
-    if (window.pageYOffset < 4840) {
-      colorElement.classList.remove('circle-scroll--color-one');
+    if (window.pageYOffset < 4660) {
+      colorElementMobile.classList.remove('circle-scroll--color-one');
     }
-    else if (window.pageYOffset > 4840 && window.pageYOffset < 4960) {
-      colorElement.classList.add('circle-scroll--color-one');
-      colorElement.classList.remove('circle-scroll--color-two');
+    else if (window.pageYOffset > 4660 && window.pageYOffset < 4920) {
+      colorElementMobile.classList.add('circle-scroll--color-one');
+      colorElementMobile.classList.remove('circle-scroll--color-two');
     }
-    else if (window.pageYOffset > 4960 && window.pageYOffset < 5300) {
-      colorElement.classList.remove('circle-scroll--color-one');
-      colorElement.classList.add('circle-scroll--color-two');
+    else if (window.pageYOffset > 4920 && window.pageYOffset < 5300) {
+      colorElementMobile.classList.remove('circle-scroll--color-one');
+      colorElementMobile.classList.add('circle-scroll--color-two');
     }
   } 
-
 });
 
-
-
-let meetColorElement = document.querySelector('.meet-place__circle-scroll svg');
 window.addEventListener('scroll', () => {
   if (window.pageYOffset < 7670) {
     meetColorElement.classList.remove('meet-place__circle-scroll--color-one');
@@ -110,6 +107,20 @@ window.addEventListener('scroll', () => {
   else if (window.pageYOffset > 7850 && window.pageYOffset < 8200) {
     meetColorElement.classList.remove('meet-place__circle-scroll--color-one');
     meetColorElement.classList.add('meet-place__circle-scroll--color-two');
+  }
+
+  if (window.matchMedia("(max-width: 500px)")) {
+    if (window.pageYOffset < 7323) {
+      meetColorElementMobile.classList.remove('meet-place__circle-scroll--color-one');
+    }
+    else if (window.pageYOffset > 7323 && window.pageYOffset < 7885) {
+      meetColorElementMobile.classList.add('meet-place__circle-scroll--color-one');
+      meetColorElementMobile.classList.remove('meet-place__circle-scroll--color-two');
+    }
+    else if (window.pageYOffset > 7885 && window.pageYOffset < 8388) {
+      meetColorElementMobile.classList.remove('meet-place__circle-scroll--color-one');
+      meetColorElementMobile.classList.add('meet-place__circle-scroll--color-two');
+    }
   }
 });
 //^ Анимация смены цвета ползунка при вертикальном скролле End
