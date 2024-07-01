@@ -86,12 +86,21 @@
   .why-are-we__description-container {
     left: calc(50% - 620px / 2);
   }
+
+  .why-are-we__img-2 {
+    height: 900px;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 692px) {
   .why-are-we__description-container {
     left: calc(50% - 434px / 2);
     width: 434px;
+  }
+
+  .why-are-we__img-2 {
+    height: 900px;
   }
 
   .img-text {
@@ -117,18 +126,20 @@
   .img-text {
     font-size: var(--fsz-little-plus);
   }
+
   .wrapper {
     position: relative;
     height: 1220px;
     padding: 90px 0px 90px 0px;
-}
+  }
+
   .why-are-we__img-1 {
     width: 100%;
     height: 610px;
   }
 
   .why-are-we__img-2 {
-    height: 610px;
+    height: 700px;
 
   }
 }
