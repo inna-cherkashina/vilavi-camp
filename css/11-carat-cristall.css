@@ -1,5 +1,5 @@
 .carat-cristall__section {
-  padding: 120px 0px 0px 0px;
+  padding: 290px 0px 0px 0px;
 }
 
 .carat-cristall__flexbox {
@@ -212,5 +212,13 @@
   .carat-cristall__count-little {
     font-size: 12px;
 
+  }
+
+
+}
+
+@media (max-width: 500px) {
+  .carat-cristall__section {
+    padding: 120px 0px 0px 0px;
   }
 }

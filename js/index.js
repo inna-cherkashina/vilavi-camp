@@ -1,47 +1,47 @@
 //! Слайдер Start
 
-  $(document).ready(function () {
-    $('.slider-container').slick({
-      arrows: true,
-      adaptiveHeight: true,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      swipe: true,
-      touchThreshold: 10,
-      centerMode: true,
-      focusOnSelect: true,
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 4
-          }
-        },
-        {
-          breakpoint: 1000,
-          settings: {
-            slidesToShow: 3,
-            arrows: false,
-          }
-        },
-        {
-          breakpoint: 800,
-          settings: {
-            slidesToShow: 2,
-            arrows: false,
-          }
-        },
+$(document).ready(function () {
+  $('.slider-container').slick({
+    arrows: true,
+    adaptiveHeight: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    swipe: true,
+    touchThreshold: 10,
+    centerMode: true,
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
 
-        {
-          breakpoint: 520,
-          settings: {
-            slidesToShow: 1,
-            arrows: false,
-          }
-        },
-      ]
-    });
+      {
+        breakpoint: 520,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+      },
+    ]
   });
+});
 
 //! Слайдер End
 
@@ -68,56 +68,63 @@ let colorElementMobile = document.querySelector('.circle-scroll--mobile svg');
 let meetColorElement = document.querySelector('.meet-place__circle-scroll svg');
 let meetColorElementMobile = document.querySelector('.meet-place__line-scroll--mobile svg');
 
-window.addEventListener('scroll', () => {  
-  if (window.pageYOffset < 4660) {
+let circle = document.querySelector('.circle-scroll--mobile');
+let line = document.querySelector('.line-scroll--mobile');
+console.log(circle.offsetTop);
+if(circle.offsetTop == 300){
+  console.log('asdf');
+}
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset < 4760) {
     colorElement.classList.remove('circle-scroll--color-one');
   }
-  else if (window.pageYOffset > 4660 && window.pageYOffset < 4830) {
+  else if (window.pageYOffset > 4760 && window.pageYOffset < 4930) {
     colorElement.classList.add('circle-scroll--color-one');
     colorElement.classList.remove('circle-scroll--color-two');
   }
-  else if (window.pageYOffset > 4830 && window.pageYOffset < 6000) {
+  else if (window.pageYOffset > 4930 && window.pageYOffset < 6100) {
     colorElement.classList.remove('circle-scroll--color-one');
     colorElement.classList.add('circle-scroll--color-two');
-  }  
+  }
 
   if (window.matchMedia("(max-width: 500px)")) {
-    if (window.pageYOffset < 4660) {
+
+    if (window.pageYOffset < 4550) {
       colorElementMobile.classList.remove('circle-scroll--color-one');
     }
-    else if (window.pageYOffset > 4660 && window.pageYOffset < 4920) {
+    else if (window.pageYOffset > 4550 && window.pageYOffset < 4950) {
       colorElementMobile.classList.add('circle-scroll--color-one');
       colorElementMobile.classList.remove('circle-scroll--color-two');
     }
-    else if (window.pageYOffset > 4920 && window.pageYOffset < 5300) {
+    else if (window.pageYOffset > 4950 && window.pageYOffset < 5500) {
       colorElementMobile.classList.remove('circle-scroll--color-one');
       colorElementMobile.classList.add('circle-scroll--color-two');
     }
-  } 
+  }
 });
 
 window.addEventListener('scroll', () => {
-  if (window.pageYOffset < 7670) {
+  if (window.pageYOffset < 7770) {
     meetColorElement.classList.remove('meet-place__circle-scroll--color-one');
   }
-  else if (window.pageYOffset > 7670 && window.pageYOffset < 7850) {
+  else if (window.pageYOffset > 7770 && window.pageYOffset < 7950) {
     meetColorElement.classList.add('meet-place__circle-scroll--color-one');
     meetColorElement.classList.remove('meet-place__circle-scroll--color-two');
   }
-  else if (window.pageYOffset > 7850 && window.pageYOffset < 8200) {
+  else if (window.pageYOffset > 7950 && window.pageYOffset < 8100) {
     meetColorElement.classList.remove('meet-place__circle-scroll--color-one');
     meetColorElement.classList.add('meet-place__circle-scroll--color-two');
   }
 
   if (window.matchMedia("(max-width: 500px)")) {
-    if (window.pageYOffset < 7323) {
+    if (window.pageYOffset < 7250) {
       meetColorElementMobile.classList.remove('meet-place__circle-scroll--color-one');
     }
-    else if (window.pageYOffset > 7323 && window.pageYOffset < 7885) {
+    else if (window.pageYOffset > 7250 && window.pageYOffset < 7750) {
       meetColorElementMobile.classList.add('meet-place__circle-scroll--color-one');
       meetColorElementMobile.classList.remove('meet-place__circle-scroll--color-two');
     }
-    else if (window.pageYOffset > 7885 && window.pageYOffset < 8388) {
+    else if (window.pageYOffset > 7750 && window.pageYOffset < 8300) {
       meetColorElementMobile.classList.remove('meet-place__circle-scroll--color-one');
       meetColorElementMobile.classList.add('meet-place__circle-scroll--color-two');
     }

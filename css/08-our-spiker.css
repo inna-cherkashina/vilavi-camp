@@ -42,9 +42,9 @@
 }
 
 .slider-container .slick-prev {
-  cursor: url('./../images/slider/arr-r.svg') 2 2, move;
+  cursor: url('./../images/slider/arr-l.svg') 2 2, move;
   background: none;
-  left: calc(50% - 100px);
+  left: 0px
 }
 
 .slick-prev--active {
@@ -57,7 +57,7 @@
 
 .slider-container .slick-arrow {
   position: absolute;
-  width: 56%;
+  width: 50%;
   height: 100%;
   font-size: 0px;
   z-index: 110;
@@ -66,9 +66,9 @@
 }
 
 .slider-container .slick-next {
-  cursor: url('./../images/slider/arr-l.svg') 2 2, move;
+  cursor: url('./../images/slider/arr-r.svg') 2 2, move;
   background: none;
-  right: calc(50% - 100px);
+  right: 0px;
 }
 
 .slick-next--active {
