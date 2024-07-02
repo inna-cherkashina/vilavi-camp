@@ -194,3 +194,11 @@ if (animItems.length > 0) {
   }
   animOnScroll();
 }
+
+let footerButton = document.querySelector('.button');
+let modal = document.querySelector('.modal-window');
+
+footerButton.addEventListener('click', function(){
+  modal.classList.add('modal-window--active');
+  
+})

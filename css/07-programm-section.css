@@ -33,17 +33,17 @@
 }
 
 .one-card {
-  background: url('./../images/img-6.jpg');
+  background: url('./../images/img-6.webp');
   background-size: cover;
 }
 
 .two-card {
-  background: url('./../images/img-7.jpg');
+  background: url('./../images/img-7.webp');
   background-size: cover;
 }
 
 .three-card {
-  background: url('./../images/img-8.jpg');
+  background: url('./../images/img-8.webp');
   background-size: cover;
 }
 

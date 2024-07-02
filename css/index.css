@@ -35,7 +35,9 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+
 
 a {
   text-decoration: none;
@@ -87,6 +89,7 @@ h2 {
 }
 
 .button {
+  cursor: pointer;
   margin: 50px auto 120px auto;
   display: flex;
   align-items: center;
@@ -103,6 +106,59 @@ h2 {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+}
+
+.modal-window {
+  display: none;
+}
+
+.modal-window--active {
+  z-index: 1000;
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0, 0.2);
+}
+
+.modal__container {
+  max-width: 400px;
+  padding: 45px 30px;
+  border-radius: 35px;
+  background: #ffffff;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+.modal-text {
+  font-size: var(--fsz-little);
+  font-weight: var(--fsz-medium);
+  font-family: var(--fw-family);
+}
+
+.modal-button {
+  font-size: var(--fsz-little-plus);
+  font-weight: var(--fsz-medium);
+  font-family: var(--fw-family);
+  width: 230px;
+  height: 45px;
+  background: var(--other-color);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: 40px auto 0px auto;
+
 }
 
 @media (max-width: 1270px) {

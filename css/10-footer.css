@@ -26,6 +26,7 @@ footer {
 .footer__flexbox a {
   color: #ffff;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 @media (max-width: 690px) {

@@ -3,135 +3,108 @@
 }
 
 .carat-cristall__flexbox {
-  margin: 50px 0px 0px 0px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  row-gap: 60px;
+  align-items: flex-end;
+  margin: 55px 0px 0px 0px;
 }
 
-.carat-cristall__item {
-  width: 45%;
+.carat-skale__box {
+  width: 25%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 20px;
 }
 
-.carat-cristall__big {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.carat-cristall__title {
-  font-size: var(--fsz-little-plus);
-  font-family: var(--fw-family);
-  color: var(--other-color);
-  font-weight: var(--fw-bold);
-  margin: 0px 0px 10px 0px;
-
-}
-
-.carat-cristall__progressbar-big {
+.carat-skale__title,
+.carat-skale__gpv {
   font-size: var(--fsz-medium-plus);
   font-family: var(--fw-family);
-  color: var(--other-color);
   font-weight: var(--fw-bold);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-.carat-one {
-  background: url('./../images/2000.png');
-  width: 186px;
-  height: 186px;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.carat-two {
-  background: url('./../images/6000.png');
-  width: 186px;
-  height: 186px;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.carat-three {
-  background: url('./../images/12000.png');
-  width: 186px;
-  height: 186px;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.carat-four {
-  background: url('./../images/20000.png');
-  width: 186px;
-  height: 186px;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.carat-cristall__count,
-.carat-cristall__gpv {
-  font-size: var(--fsz-medium-plus);
-  font-family: var(--fw-family);
   color: var(--other-color);
-  font-weight: var(--fw-bold);
+  text-align: center;
 }
 
 
-.carat-cristall__little {
-  width: 100%;
+.carat-skale__item {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 25px;
-  margin: 25px 0px 0px 0px;
+  min-height: 108px;
 }
 
-.carat-cristall__count-little {
+.carat-skale {
+  width: 78px;
+  /* height: 375px; */
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  background: linear-gradient(#EF786F, #FE5D50);
+}
+
+.carat-skale__text {
   font-size: var(--fsz-little-plus);
   font-family: var(--fw-family);
-  color: var(--other-color);
   font-weight: var(--fw-bold);
+  color: var(--other-color);
+  text-align: center;
+  margin: 20px 0px 0px 0px;
 }
 
-.carat-cristall__progressbar-little {
-  position: relative;
-  /* background: url('./../images/little-carat.png'); */
-  width: 108px;
-  height: 108px;
-  background-size: cover;
+.little-catar__flexbox {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
+  gap: 10px;
 }
 
-.progressbar-little__img {
-  position: absolute;
+.little-carat__box {
+  display: flex;
+  flex-direction: column;
+  gap: 7px
+}
+
+.little-carat__box img {
   display: block;
-  animation: circle-little 3s ease infinite both;
-  -webkit-animation: circle-little 3s ease infinite both;
+  width: 60px;
+  height: 60px;
+}
+
+.little-carat__text {
+  font-size: 12px;
+  font-family: var(--fw-family);
+  font-weight: var(--fw-bold);
+  color: var(--other-color);
+  text-align: center;
+
+}
+
+.carat-description {
+  font-size: 14px;
+  font-family: var(--fw-family);
+  font-weight: var(--fw-bold);
+  color: var(--other-color);
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+}
+
+.skale-one {
+  height: 75px;
+}
+
+.skale-two {
+  height: 175px;
+}
+
+.skale-three {
+  height: 275px;
+}
+
+.skale-four {
+  height: 375px;
+}
+
+.little-carat__mobile {
+  display: none;
 }
 
 @keyframes circle-little {
@@ -167,58 +140,59 @@
   }
 }
 
-@media (max-width: 950px) {
-  .carat-cristall__flexbox {
-    margin: 50px 0px 0px 0px;
+@media (max-width: 960px) {
+  .carat-skale__item {
+    min-height: 0px;
+  }
+
+  .little-catar__flexbox {
+    display: none;
+  }
+
+  .carat-description {
+    display: none;
+  }
+
+  .carat-skale {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    row-gap: 60px;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 0px 0px 15px 0px;
   }
 
-  .carat-cristall__item {
-    width: 100%;
+  .little-carat__mobile {
+    background: linear-gradient(45deg, #BCEBFF, #35B6FF);
+    display: block;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
   }
-
 }
 
 @media (max-width: 692px) {
 
-  .carat-one,
-  .carat-two,
-  .carat-three,
-  .carat-four {
-    width: 150px;
-    height: 150px;
+  .carat-skale__title,
+  .carat-skale__gpv {
+    font-size: 20px;
   }
 
-  .carat-cristall__count,
-  .carat-cristall__gpv {
-    font-size: var(--fsz-medium);
-
+  .carat-skale__box {
+    gap: 10px;
   }
 
-  .carat-cristall__progressbar-little {
-    width: 71px;
-    height: 71px;
+  .carat-skale {
+    width: 64px;
   }
-
-  .progressbar-little__img {
-    width: 71px;
-  }
-
-  .carat-cristall__count-little {
-    font-size: 12px;
-
-  }
-
-
 }
 
 @media (max-width: 500px) {
   .carat-cristall__section {
-    padding: 120px 0px 0px 0px;
+    padding: 200px 0px 0px 0px;
   }
 }
