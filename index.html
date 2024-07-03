@@ -171,7 +171,7 @@
   </header>
 
   <main>
-    <section class="whant-to-go-section">
+    <section id="conditions" class="whant-to-go-section">
       <div class="center">
         <div class="title__container">
           <h2>
@@ -185,7 +185,7 @@
         </div>
         <div class="whant-to-go__description-container">
           <div class="whant-to-go__description">
-            Подтвердить квалификацию от 3 CARAT и выше в каждомиз периодов:<b> май, июнь, июль, август 2024</b> – для
+            Подтвердить квалификацию от 3 CARAT и выше в каждом из периодов:<b> май, июнь, июль, август 2024</b> – для
             вас
             участие
             в VILAVI CAMP <b>с полностью оплаченной программой<br> и проживанием.</b>
@@ -1082,6 +1082,20 @@
     </section>
 
     <a class="button">Я хочу поехать!</a>
+    <div class="conditions-description__container conditions--disactive">
+      Обязательные <a href="#conditions"><i>условия</i></a> участия не были выполнены. Но возможность поехать на VILAVI
+      CAMP с
+      полностью оплаченной компанией программой и проживанием все еще есть. Подробности <a
+        href="https://t.me/+YGTIisDo4-c0M2Ni"><i>здесь</i></a>
+    </div>
+    <!-- if (обязательные условия не выполнены) {
+     button.classList.add('button--disabled');
+     conditionText.classList.remove('conditions--disactive');
+    }
+     else{
+     button.classList.remove('button--disabled');
+     conditionText.classList.add('conditions--disactive');
+     }-->
   </main>
 
   <footer>
@@ -1098,10 +1112,12 @@
 
   <div class="modal-window">
     <div class="modal__container">
+      <div class="cross"></div>
       <div class="modal-text">
         Мы очень рады, что вы решили быть в команде VILAVI CAMP! Мы свяжемся с вами по завершении ПРОМО-периода
       </div>
       <a href="" class="modal-button">
+        <!-- Ссылка ведёт на ЛК -->
         Вернуться на главную
       </a>
     </div>

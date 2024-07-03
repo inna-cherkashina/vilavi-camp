@@ -71,7 +71,7 @@ let meetColorElementMobile = document.querySelector('.meet-place__line-scroll--m
 let circle = document.querySelector('.circle-scroll--mobile');
 let line = document.querySelector('.line-scroll--mobile');
 console.log(circle.offsetTop);
-if(circle.offsetTop == 300){
+if (circle.offsetTop == 300) {
   console.log('asdf');
 }
 window.addEventListener('scroll', () => {
@@ -197,8 +197,13 @@ if (animItems.length > 0) {
 
 let footerButton = document.querySelector('.button');
 let modal = document.querySelector('.modal-window');
+let cross = document.querySelector('.cross');
 
-footerButton.addEventListener('click', function(){
+footerButton.addEventListener('click', function () {
   modal.classList.add('modal-window--active');
-  
+
+});
+
+cross.addEventListener('click', function () {
+  modal.classList.remove('modal-window--active');
 })

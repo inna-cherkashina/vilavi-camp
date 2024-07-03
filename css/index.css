@@ -108,6 +108,32 @@ h2 {
   -o-border-radius: 50px;
 }
 
+.button--disabled {
+  cursor: auto;
+  margin: 50px auto 0px auto;
+  background: var(--border-color);
+  color: #575756;
+}
+
+.conditions-description__container {
+  max-width: 506px;
+  margin: 30px auto 120px auto;
+  text-align: center;
+  font-size: 14px;
+  font-family: var(--fw-family);
+  font-weight: var(--fw-bold);
+  line-height: 170%;
+}
+
+.conditions--disactive {
+  display: none;
+}
+
+.conditions-description__container a {
+  color: var(--other-color);
+  text-decoration: underline;
+}
+
 .modal-window {
   display: none;
 }
@@ -125,6 +151,7 @@ h2 {
 }
 
 .modal__container {
+  position: relative;
   max-width: 400px;
   padding: 45px 30px;
   border-radius: 35px;
@@ -133,6 +160,26 @@ h2 {
   -moz-border-radius: 35px;
   -ms-border-radius: 35px;
   -o-border-radius: 35px;
+}
+
+.cross {
+  cursor: pointer;
+  position: absolute;
+  content: "\2716";
+  font-size: 50px;
+  width: 40px;
+  height: 67px;
+  top: -5px;
+  right: 13px;
+}
+
+.cross::after {
+
+  position: absolute;
+  content: "\2716";
+  font-size: 50px;
+  color: var(--other-color);
+
 }
 
 .modal-text {
@@ -204,6 +251,10 @@ h2 {
   .button {
     margin: 50px auto 55px auto;
 
+  }
+
+  .conditions-description__container {
+    margin: 30px 20px 50px 20px;
   }
 
 }
