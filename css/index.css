@@ -163,6 +163,7 @@ h2 {
 }
 
 .cross {
+  display: flex;
   cursor: pointer;
   position: absolute;
   content: "\2716";
@@ -171,13 +172,14 @@ h2 {
   height: 67px;
   top: -5px;
   right: 13px;
+  align-items: center;
+  justify-content: center;
 }
 
 .cross::after {
-
   position: absolute;
   content: "\2716";
-  font-size: 50px;
+  font-size: 38px;
   color: var(--other-color);
 
 }
